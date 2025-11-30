@@ -1,0 +1,138 @@
+/*
+This is a good layout for a mobile-first CSS template.
+Following this flow will minimize the number of styles you need to write and will ensure you are thinking, designing and developing mobile-first.
+Most of your styles get written like standard CSS, but for your mobile presentation. Generally speaking, a good mobile presention will stretch out nicely for larger screens.
+
+Sometimes, when we stretch out to larger screens, we need to make minor tweaks for the larger devices -- you can make these tweaks in the tablet media query, or if the issue exists on desktop only, the desktop media query.
+You will find this is far easier than the opposite task of using CSS to cram your desktop experience into a mobile device.
+*/
+/*********************************************************************
+ LOADS IN A NICE RESET TO ENSURE ALL BROWSERS HAVE THE SAME BASE STYLES
+*********************************************************************/
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css');
+
+/*********************************************************************
+  YOUR MOBILE/BASE STYLES GO HERE
+*********************************************************************/
+* {
+    box-sizing: border-box;
+    background-color: #e4d5b7
+
+}
+
+html, body {
+    /* Sets default font-size to 16px, ensuring 1em = 16px; */
+    font-size: 22px;
+}
+
+img{
+  display:block;
+margin: 0 auto;
+ width: 90%;
+
+}
+
+.caption{
+ text-align: center;
+   font-size: 12px; }
+
+  
+
+.headline{
+  display:block;
+  margin: 0 auto;
+  font-family: "Merriweather", serif;
+  text-align: center;
+  font-size: 22px;
+  padding: 10px;
+}
+
+.bbh-sans-bogle-regular {
+  font-family: "BBH Sans Bogle", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lexend{
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 22px;
+}
+
+
+
+.roboto-mono {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.merriweather{
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.libre-baskerville{
+  font-family: "Libre Baskerville", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+.story{
+  font-family: "Libre Baskerville", serif;
+  display: block;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+/*********************************************************************
+  YOUR TABLET/DESKTOP STYLES GO HERE
+*********************************************************************/
+@media(min-width: 681px) {
+    /* Any adjustments for tablets and larger go here.
+    Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+
+    img{
+  
+      max-width: 1000px;
+      width:700%;
+      padding-top: 10px;
+    }
+
+container{
+      display: inline-block;
+      max-width: 800px;
+      /*margin: 0 auto;*/
+    }
+    .icon img{
+      display: block;
+      width:150px;
+      float:left;
+      clear: left;
+      padding: 3px;
+      margin:0 auto;
+    }
+
+.headline{
+    width: 70%;
+    font-size: 23px;
+
+}
+
+
+/*********************************************************************
+  YOUR DESKTOP-ONLY STYLES GO HERE
+*********************************************************************/
+@media(min-width: 729px) {
+    /* Any adjustments for desktop and larger go here.
+    Note these styles will be applied to anything 729px or larger -- so desktop */
+}
